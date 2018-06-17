@@ -7,9 +7,9 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("宋亮，这是一个测试的程序!"))
+		w.Write([]byte("bye Hello, this is version 1!"))
 	})
 
-	log.Println("Starting server... v1")
-	log.Fatal(http.ListenAndServe(":80", nil))
+	log.Println("Starting server ...v1")
+	log.Fatal(http.ListenAndServe(":4000", nil))
 }
